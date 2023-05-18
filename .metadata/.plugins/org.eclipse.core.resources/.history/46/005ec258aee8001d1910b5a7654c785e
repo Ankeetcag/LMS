@@ -1,0 +1,15 @@
+package springbootprojecttwowheller.com.cagl.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import springbootprojecttwowheller.com.cagl.entity.whatsappLeads;
+
+@Repository
+public interface whatsappLeadsRepository extends JpaRepository<whatsappLeads, Integer>{
+
+	
+	public List<whatsappLeads> getWhatsappLeads();
+}

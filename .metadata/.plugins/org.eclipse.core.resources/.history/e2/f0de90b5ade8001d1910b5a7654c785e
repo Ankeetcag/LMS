@@ -1,0 +1,19 @@
+package springbootprojecttwowheller.com.cagl.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class whatsappLeadsController {
+
+	@Autowired
+	HttpServletRequest request;
+	
+	@GetMapping("/upload_new")
+	public String showleads() {
+	return "upload_new";
+	}
+}

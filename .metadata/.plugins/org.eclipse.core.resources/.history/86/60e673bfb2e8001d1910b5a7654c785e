@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>demo table</title>
+</head>
+
+<body>
+	<h1>Leads</h1>
+	<table>
+		<thead>
+			<tr class='warning'>
+				<th>Customer Id</th>
+				<th>Customer Name</th>
+				<th>Branch Id</th>
+				<th>Product Type</th>
+				<th>Loan Amount</th>
+			</tr>
+		</thead>
+
+		<tr th:each="leads:${whatsappLeads}">
+			<td th:text="${leads.customerId}"></td>
+			<td th:text="${leads.customerName}"></td>
+			<td th:text="${leads.branchId}"></td>
+			<td th:text="${leads.productType}"></td>
+			<td th:text="${leads.loanAmount}"></td>
+		</tr>
+	</table>
+</body>
+
+</html>

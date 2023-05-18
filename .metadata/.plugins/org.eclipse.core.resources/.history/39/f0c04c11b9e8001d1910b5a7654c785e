@@ -1,0 +1,68 @@
+package springbootprojecttwowheller.com.cagl.dropdown.entity;
+
+
+public class WhatAppLeads {
+
+	public WhatAppLeads() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public WhatAppLeads(String branchId, String branchName, String customerId, String customerName, String productType,
+			long loanAmount) {
+		super();
+		this.branchId = branchId;
+		this.branchName = branchName;
+		this.customerId = customerId;
+		this.customerName = customerName;
+		this.productType = productType;
+		this.loanAmount = loanAmount;
+	}
+	@Override
+	public String toString() {
+		return "WhatAppLeads [branchId=" + branchId + ", branchName=" + branchName + ", customerId=" + customerId
+				+ ", customerName=" + customerName + ", productType=" + productType + ", loanAmount=" + loanAmount
+				+ "]";
+	}
+	public String getBranchId() {
+		return branchId;
+	}
+	public void setBranchId(String branchId) {
+		this.branchId = branchId;
+	}
+	public String getBranchName() {
+		return branchName;
+	}
+	public void setBranchName(String branchName) {
+		this.branchName = branchName;
+	}
+	public String getCustomerId() {
+		return customerId;
+	}
+	public void setCustomerId(String customerId) {
+		this.customerId = customerId;
+	}
+	public String getCustomerName() {
+		return customerName;
+	}
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	public String getProductType() {
+		return productType;
+	}
+	public void setProductType(String productType) {
+		this.productType = productType;
+	}
+	public long getLoanAmount() {
+		return loanAmount;
+	}
+	public void setLoanAmount(long loanAmount) {
+		this.loanAmount = loanAmount;
+	}
+	private String branchId;
+	private String branchName;
+	private String customerId;
+	private String customerName;
+	private String productType;
+	private long loanAmount;
+}
